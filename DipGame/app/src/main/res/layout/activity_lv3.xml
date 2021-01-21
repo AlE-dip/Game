@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lv3">
+
+    <ImageView
+        android:id="@+id/lv3imgback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_revert"/>
+
+    <ImageView
+        android:id="@+id/lv3imggoiy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_search"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/lv3txtcauhoi"
+        android:textSize="20sp"
+        android:text="Nhìn hình tìm chữ..."
+        android:layout_marginTop="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/lv3imgtenbatcoc"
+        android:src="@drawable/lv3tenbaccoc"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv3txtcauhoi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:id="@+id/lv5imgcmu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lv3imgtenbatcoc"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintLeft_toLeftOf="@+id/lv3imgtenbatcoc"
+        app:layout_constraintRight_toRightOf="@+id/lv3imgtenbatcoc"
+        app:layout_constraintTop_toTopOf="@+id/lv3imgtenbatcoc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/lv3imgbebibat"
+        android:src="@drawable/lv3bebibat"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lv3imgtenbatcoc"
+        app:layout_constraintTop_toBottomOf="@+id/lv3txtcauhoi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <ImageView
+        android:id="@+id/lv3imgcop"
+        android:src="@drawable/lv3cop"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/lv3imgbebibat"
+        app:layout_constraintTop_toBottomOf="@+id/lv3txtcauhoi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <RelativeLayout
+        android:id="@+id/lv3rlkhungtraloi"
+        android:layout_marginTop="60dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv3imgtenbatcoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="20sp"
+            android:text=""
+            android:background="@drawable/lv3bttrailoi"
+            android:id="@+id/lv3bt1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text=""
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3bt1"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lv3bt2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text=""
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3bt2"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lv3bt3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text=""
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3bt3"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lv3bt4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text=""
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3bt4"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lv3bt5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text=""
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3bt5"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lv3bt6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv3rlkhungchon"
+        android:layout_marginTop="60dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv3rlkhungtraloi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="20sp"
+            android:text="D"
+            android:background="@drawable/lv3bttrailoi"
+            android:id="@+id/lv3btchon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text="C"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon1"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text="E"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon2"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text="A"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon3"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text="U"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon4"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:textSize="20sp"
+            android:text="P"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon5"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+
+        <Button
+            android:layout_below="@+id/lv3btchon1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="O"
+            android:background="@drawable/lv3bttrailoi"
+            android:id="@+id/lv3btchon7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_below="@+id/lv3btchon1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="I"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon1"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_below="@+id/lv3btchon1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="V"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon2"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_below="@+id/lv3btchon1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="B"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon3"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_below="@+id/lv3btchon1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="C"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon4"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_below="@+id/lv3btchon1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="T"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_toRightOf="@+id/lv3btchon5"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv3btchon12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lv3txtthang"
+        android:text=""
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv3txtcauhoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@drawable/menuthang"
+        android:padding="5dp"
+        android:id="@+id/lv3menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Thắng rồi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lv3bttiep"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#673AB7"
+            android:text="Tiếp"
+            android:background="@drawable/btmenu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/lv3btchoilai"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#673AB7"
+            android:text="Chơi lại"
+            android:background="@drawable/btmenu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv3rlgiaithich"
+        android:background="#94030000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/lv3txtgiaithich"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lv3btgiaithich"
+            android:textColor="#FFFFFF"
+            android:text="Ẩn"
+            android:textSize="20sp"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

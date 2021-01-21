@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lv2">
+
+    <ImageView
+        android:id="@+id/lv2imgback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_revert"/>
+
+    <ImageView
+        android:id="@+id/lv2imggoiy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_search"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/lv2txtcauhoi"
+        android:textSize="20sp"
+        android:text="Tìm mọi cách để chú sóc chiến thắng đi!"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/lv2txtthang"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv2txtcauhoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/lv2imgnenchay"
+        android:src="@drawable/lv2nenchay"
+        android:layout_width="405dp"
+        android:layout_height="500dp"/>
+
+    <SeekBar
+        android:paddingRight="30dp"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/lv2thumbsen"
+        android:id="@+id/lv2sbsen"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintRight_toRightOf="@+id/lv2imgnenchay"
+        app:layout_constraintLeft_toLeftOf="@+id/lv2imgnenchay"
+        app:layout_constraintBottom_toBottomOf="@+id/lv2imgnenchay"
+        android:max="200"
+        android:layout_marginLeft="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/lv2thumbsoc"
+        android:id="@+id/lv2sbsoc"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintRight_toRightOf="@+id/lv2imgnenchay"
+        app:layout_constraintLeft_toLeftOf="@+id/lv2imgnenchay"
+        app:layout_constraintBottom_toBottomOf="@+id/lv2sbsen"
+        android:max="200"
+        android:layout_marginLeft="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:max="200"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/lv2thumbrua"
+        android:id="@+id/lv2sbrua"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintRight_toRightOf="@+id/lv2imgnenchay"
+        app:layout_constraintLeft_toLeftOf="@+id/lv2imgnenchay"
+        app:layout_constraintBottom_toBottomOf="@+id/lv2sbsoc"
+        android:layout_marginLeft="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginRight="395dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/lv2imgnenchay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/lv2imgquac"
+        android:src="@drawable/lv2quac"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <RelativeLayout
+        android:id="@+id/lv2rlbatdau"
+        android:background="#65030303"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:id="@+id/lv2btchay"
+            android:background="@drawable/lv2btchay"
+            android:text="Chạy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/lv2txtthoigian"
+            android:layout_marginTop="-40dp"
+            android:layout_alignTop="@+id/lv2btchay"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/menuthang"
+        android:padding="5dp"
+        android:id="@+id/lv2menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Thắng rồi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lv2bttiep"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#673AB7"
+            android:text="Tiếp"
+            android:background="@drawable/btmenu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/lv2btchoilai"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#673AB7"
+            android:text="Chơi lại"
+            android:background="@drawable/btmenu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv2rlgiaithich"
+        android:background="#94030000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/lv2txtgiaithich"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lv2btgiaithich"
+            android:textColor="#FFFFFF"
+            android:text="Ẩn"
+            android:textSize="20sp"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

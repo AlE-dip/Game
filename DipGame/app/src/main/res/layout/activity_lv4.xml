@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lv4">
+
+    <ImageView
+        android:id="@+id/lv4imgback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_revert"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/lv4txtcauhoi"
+        android:textSize="20sp"
+        android:text="Tiêu diệt con chuột!"
+        android:layout_marginTop="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/lv4imggoiy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_search"/>
+
+    <ImageView
+        android:layout_marginBottom="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/lv4imgchuot"
+        android:src="@drawable/lv4chuot1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+    <ImageView
+        android:layout_marginBottom="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lv4imgkeomut"
+        android:id="@+id/lv4imgdien"
+        android:src="@drawable/lv4dien1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toLeftOf="@+id/lv4imgdapruoi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv4txtcauhoi"
+        android:id="@+id/lv4imgxitdoc"
+        android:src="@drawable/lv4xitdoc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toLeftOf="@+id/lv4imgphongxa"
+        app:layout_constraintLeft_toRightOf="@+id/lv4imgxitdoc"
+        app:layout_constraintTop_toBottomOf="@+id/lv4txtcauhoi"
+        android:id="@+id/lv4imgdapruoi"
+        android:src="@drawable/lv4dapruoi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/lv4imgdapruoi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv4txtcauhoi"
+        android:id="@+id/lv4imgphongxa"
+        android:src="@drawable/lv4phongxa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/lv4imgthuocchuot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv4imgdapruoi"
+        android:id="@+id/lv4imgdao"
+        android:src="@drawable/lv4dao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/lv4imgkeomut"
+        app:layout_constraintLeft_toRightOf="@+id/lv4imgdao"
+        app:layout_constraintTop_toBottomOf="@+id/lv4imgdapruoi"
+        android:id="@+id/lv4imgthuocchuot"
+        android:src="@drawable/lv4thuocchuot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/lv4imgthuocchuot"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv4imgdapruoi"
+        android:id="@+id/lv4imgkeomut"
+        android:src="@drawable/lv4keomut"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lv4txtthang"
+        android:textSize="20sp"
+        android:textColor="#F44336"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv4imgthuocchuot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@drawable/menuthang"
+        android:padding="5dp"
+        android:id="@+id/lv4menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Thắng rồi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lv4bttiep"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#673AB7"
+            android:text="Tiếp"
+            android:background="@drawable/btmenu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/lv4btchoilai"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#673AB7"
+            android:text="Chơi lại"
+            android:background="@drawable/btmenu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv4rlgiaithich"
+        android:background="#94030000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/lv4txtgiaithich"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lv4btgiaithich"
+            android:textColor="#FFFFFF"
+            android:text="Ẩn"
+            android:textSize="20sp"
+            android:background="@drawable/lv3bttrailoi"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
